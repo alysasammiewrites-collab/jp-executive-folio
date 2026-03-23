@@ -32,8 +32,9 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="font-display text-lg font-semibold text-primary-foreground tracking-wide">
-          JPG<span className="text-gold">H</span>
+        <a href="#" className="flex items-center gap-3 font-display text-lg font-semibold text-primary-foreground tracking-wide">
+          <img src={profilePhoto} alt="Juan Pablo García Huizi" className="w-8 h-8 rounded-full object-cover object-top border border-gold/40" />
+          <span>Juan Pablo <span className="text-gold">García Huizi</span></span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
