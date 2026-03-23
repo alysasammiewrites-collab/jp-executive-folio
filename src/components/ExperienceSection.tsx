@@ -1,5 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const experiences = [
   {
@@ -119,6 +122,29 @@ const ExperienceSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* View Full Experience Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="mt-16 text-center"
+        >
+          <div className="relative inline-block group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-gold/50 via-gold-light/30 to-gold/50 rounded-lg blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+            <Button variant="hero" size="lg" asChild className="relative bg-gradient-to-r from-gold to-gold-light text-navy font-bold shadow-lg shadow-gold/20 hover:shadow-gold/40">
+              <Link to="/experience" className="gap-2">
+                View Full Experience
+                <ArrowRight size={16} />
+                <motion.span
+                  className="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none"
+                  animate={{ x: ["-100%", "200%"] }}
+                  transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 3 }}
+                />
+              </Link>
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
