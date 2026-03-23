@@ -108,41 +108,41 @@ const HeroSection = () => {
               Delivering commercial strategy, contract leadership, and risk-managed outcomes across global projects.
             </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" asChild>
-              <a href="#experience">
-                <ArrowDown size={16} />
-                View Experience
-              </a>
-            </Button>
-
-            {/* Premium download button */}
-            <motion.div
-              className="relative group"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              {/* Glow ring */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-gold/60 via-gold-light/40 to-gold/60 rounded-lg blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
-              <Button
-                variant="hero"
-                size="lg"
-                asChild
-                className="relative bg-gradient-to-r from-gold to-gold-light text-navy font-bold shadow-lg shadow-gold/20 hover:shadow-gold/40"
-              >
-                <a href="/Juan_Pablo_Garcia_Huizi_CV.pdf" download className="gap-2">
-                  <Download size={16} />
-                  Download CV
-                  <motion.span
-                    className="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none"
-                    animate={{ x: ["-100%", "200%"] }}
-                    transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 3 }}
-                  />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+              <Button variant="hero" size="lg" asChild>
+                <a href="#experience">
+                  <ArrowDown size={16} />
+                  View Experience
                 </a>
               </Button>
-            </motion.div>
-          </div>
-        </motion.div>
+
+              {/* Premium download button */}
+              <motion.div
+                className="relative group"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <div className="absolute -inset-1 bg-gradient-to-r from-gold/60 via-gold-light/40 to-gold/60 rounded-lg blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+                <Button
+                  variant="hero"
+                  size="lg"
+                  asChild
+                  className="relative bg-gradient-to-r from-gold to-gold-light text-navy font-bold shadow-lg shadow-gold/20 hover:shadow-gold/40"
+                >
+                  <a href="/Juan_Pablo_Garcia_Huizi_CV.pdf" download className="gap-2">
+                    <Download size={16} />
+                    Download CV
+                    <motion.span
+                      className="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none"
+                      animate={{ x: ["-100%", "200%"] }}
+                      transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 3 }}
+                    />
+                  </a>
+                </Button>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       <motion.div
