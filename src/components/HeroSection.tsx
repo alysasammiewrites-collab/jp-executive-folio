@@ -108,7 +108,7 @@ const HeroSection = () => {
               Delivering commercial strategy, contract leadership, and risk-managed outcomes across global projects.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="lg" asChild>
                 <a href="#experience">
                   <ArrowDown size={16} />
