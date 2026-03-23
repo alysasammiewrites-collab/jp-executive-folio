@@ -1,6 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
@@ -75,79 +74,50 @@ const ExperienceSection = () => {
 
   return (
     <section id="experience" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 max-w-5xl">
+      <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
         >
           <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">Career</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
             Professional Experience
           </h2>
-          <div className="w-12 h-px bg-gold mx-auto" />
+          <div className="w-12 h-px bg-gold mb-12" />
         </motion.div>
 
-        {/* Zigzag timeline */}
         <div className="relative">
-          {/* Center line */}
-          <div className="hidden md:block absolute left-1/2 -translate-x-px top-0 bottom-0 w-px bg-border" />
+          <div className="absolute left-4 md:left-0 top-0 bottom-0 w-px bg-border" />
 
-          {experiences.map((exp, i) => {
-            const isLeft = i % 2 === 0;
+          {experiences.map((exp, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="relative pl-12 md:pl-10 pb-12 last:pb-0"
+            >
+              <div className="absolute left-2.5 md:left-[-4px] top-1 w-2.5 h-2.5 rounded-full bg-gold border-2 border-background" />
 
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: isLeft ? -40 : 40 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: i * 0.15 }}
-                className={`relative flex flex-col md:flex-row items-start mb-12 last:mb-0 ${
-                  isLeft ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
-              >
-                {/* Card */}
-                <div className={`w-full md:w-[calc(50%-2rem)] ${isLeft ? "md:pr-0" : "md:pl-0"}`}>
-                  <div className="group relative bg-card border border-border rounded-lg p-6 hover:border-gold/30 hover:shadow-lg hover:shadow-gold/5 transition-all duration-500">
-                    {/* Gold accent bar */}
-                    <div className={`absolute top-0 ${isLeft ? "left-0" : "right-0"} w-1 h-full bg-gradient-to-b from-gold to-gold-light rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <p className="text-xs uppercase tracking-widest text-gold font-medium mb-1">{exp.period}</p>
+              <h3 className="text-xl font-display font-bold text-foreground mb-1">{exp.title}</h3>
+              <p className="text-sm text-muted-foreground mb-1">{exp.company} · {exp.location}</p>
+              <span className="inline-block text-xs font-medium bg-gold/10 text-gold px-3 py-1 rounded-full mb-4">
+                {exp.highlight}
+              </span>
 
-                    <p className="text-xs uppercase tracking-widest text-gold font-medium mb-2">
-                      {exp.period}
-                    </p>
-                    <h3 className="text-lg font-display font-bold text-foreground mb-1">
-                      {exp.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      {exp.company} · {exp.location}
-                    </p>
-                    <span className="inline-block text-xs font-medium bg-gold/10 text-gold px-3 py-1 rounded-full mb-4">
-                      {exp.highlight}
-                    </span>
-
-                    <ul className="space-y-2">
-                      {exp.bullets.map((bullet, j) => (
-                        <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
-                          <span className="text-gold mt-1 shrink-0">–</span>
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Center node (desktop) */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 z-10 w-10 h-10 rounded-full bg-background border-2 border-gold items-center justify-center shadow-md shadow-gold/10">
-                  <Briefcase size={16} className="text-gold" />
-                </div>
-
-                {/* Spacer for the other side */}
-                <div className="hidden md:block md:w-[calc(50%-2rem)]" />
-              </motion.div>
-            );
-          })}
+              <ul className="space-y-2">
+                {exp.bullets.map((bullet, j) => (
+                  <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
+                    <span className="text-gold mt-1.5 shrink-0">–</span>
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
