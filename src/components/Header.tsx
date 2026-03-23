@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const navItems = [
   { label: "About", href: "#about" },
