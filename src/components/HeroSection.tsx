@@ -38,12 +38,13 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gold/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 container mx-auto px-6">
-        <div className="flex flex-col items-center justify-center gap-8">
-          {/* Profile Photo - Top Center */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+          {/* Profile Photo - Left Side */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex-shrink-0"
           >
             <div className="relative">
               <div className="absolute -inset-1.5 bg-gradient-to-br from-gold/60 via-gold-light/30 to-gold/60 rounded-full blur-md" />
@@ -56,12 +57,12 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Text Content - Centered Below */}
+          {/* Text Content - Right Side */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center"
+            className="text-center md:text-left"
           >
             {/* Decorative top element */}
             <motion.div
@@ -108,7 +109,7 @@ const HeroSection = () => {
               Delivering commercial strategy, contract leadership, and risk-managed outcomes across global projects.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
               <Button variant="hero" size="lg" asChild>
                 <a href="#experience">
                   <ArrowDown size={16} />
