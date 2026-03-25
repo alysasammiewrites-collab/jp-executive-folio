@@ -3,10 +3,10 @@ import { useRef } from "react";
 import { Globe } from "lucide-react";
 
 const regions = [
-  { name: "Latin America", detail: "Chile, Venezuela, and more" },
-  { name: "United States", detail: "Long Island, various projects" },
+  { name: "Latin America", detail: "Chile, Venezuela, Peru, Colombia, Mexico, Panama" },
+  { name: "United States", detail: "Corsicana, Texas – Fracking Wells Consultancy" },
   { name: "Nigeria (MEA)", detail: "Chevron Offshore Operations" },
-  { name: "Caribbean", detail: "Environmental & Energy Projects" },
+  { name: "Caribbean", detail: "Sint Maarten – Environmental & Energy Projects" },
 ];
 
 const GlobalSection = () => {

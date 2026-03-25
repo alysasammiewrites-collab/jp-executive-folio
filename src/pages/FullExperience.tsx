@@ -9,92 +9,101 @@ const fullExperiences = [
     company: "CyD Ingeniería",
     location: "Chile",
     title: "Contract Team Lead",
-    period: "2023 – Present",
+    period: "Nov 2023 – Present",
     bullets: [
-      "Leading contract management for a **$250M** data center project",
-      "Managing vendor performance, compliance, and contract execution",
-      "Driving risk identification and mitigation strategies",
+      "Leading contract management for a **$250M** data center project (40MW infrastructure)",
+      "Drafting, negotiating, and administering EPCM and supplier contracts",
+      "Driving risk identification and mitigation strategies across the full project lifecycle",
       "Overseeing budgeting, cost control, and contract documentation",
-      "Acting as key interface between stakeholders, contractors, and leadership",
+      "Acting as key interface between stakeholders, contractors, and senior leadership",
       "Supporting dispute resolution and contract negotiations",
     ],
   },
   {
-    company: "Mainstream Renewable Power",
+    company: "CyD Ingeniería – Mainstream Renewable Power",
     location: "Chile",
     title: "Senior Contract Administrator",
-    period: "2021 – 2023",
+    period: "Jul 2021 – Sep 2023",
     bullets: [
-      "Managed contracts for a **$100M** solar energy project",
+      "Managed contracts for a **$100M** solar energy project (105MW plant)",
       "Administered contract amendments, including COVID-related adjustments",
-      "Managed **$24M** in bonds and financial securities",
+      "Managed **$24M** in performance and advance payment bonds",
       "Resolved **29** contractual claims and breaches",
       "Controlled payment processes and financial tracking",
-      "Led negotiations on delay damages and EOT (Extension of Time)",
+      "Led negotiations on delay damages and Extension of Time (EOT) claims",
     ],
   },
   {
-    company: "Bechtel",
+    company: "Bechtel – MLP-INCO Mining Project",
     location: "Chile",
     title: "Project Controls Engineer (PEMS)",
-    period: "2019 – 2020",
+    period: "Oct 2019 – Jul 2020",
     bullets: [
-      "Managed equipment forecasting, tracking, and cost reporting systems",
-      "Supported construction equipment planning and scheduling",
+      "Managed project equipment data using PEMS asset management system",
+      "Supported construction equipment planning, forecasting, and scheduling",
       "Delivered performance reporting and utilization analysis",
       "Provided technical system support and training to project teams",
     ],
   },
   {
     company: "J.P. Environmental Consulting & Construction",
-    location: "International",
+    location: "USA, Mexico, Venezuela",
     title: "Managing Director / Lead Project Consultant",
-    period: "2014 – 2017",
+    period: "Jan 2014 – Jan 2017",
     bullets: [
-      "Led multi-country consultancy projects across USA, Mexico, Venezuela",
+      "Led multi-country consultancy projects across the United States, Mexico, and Venezuela",
       "Delivered cost estimation, feasibility studies, and investment planning",
       "Managed engineering evaluations, procurement, and project execution",
       "Secured and executed multiple private and commercial contracts",
     ],
     keyProjects: [
-      "**$25.2M** Drilling Rigs Evaluation (83 rigs)",
-      "**$2.2M** Fracking Wells Evaluation (USA)",
-      "**$500K** Private Investment Project (Mexico)",
+      "**$25.2M** Drilling Rigs Evaluation (83 rigs) – USA",
+      "**$2.2M** Fracking Wells Evaluation – Corsicana, Texas",
+      "**$500K** Private Investment Project – Mexico",
     ],
   },
   {
-    company: "Chevron Nigeria",
+    company: "Chevron Nigeria – Funiwa Gas Project (Offshore)",
     location: "Nigeria",
     title: "Lead Project Control Specialist",
-    period: "2013 – 2014",
+    period: "Jul 2013 – Aug 2014",
     bullets: [
       "Delivered project controls for **$3B** offshore gas supply project",
+      "Implemented cost control frameworks (WBS, CBS, KPI, EVA)",
       "Managed cost estimation methodologies (Class III & IV)",
       "Oversaw scheduling, forecasting, and reporting systems",
       "Coordinated change order management and compliance tracking",
+      "Supported FEED and Pre-FEED project phases",
     ],
   },
   {
     company: "J.P. Environmental Consulting",
-    location: "Peru / Caribbean",
+    location: "Peru, Colombia, Caribbean",
     title: "Managing Director / Lead Consultant",
-    period: "2010 – 2013",
+    period: "Jan 2010 – Dec 2013",
     bullets: [
       "Delivered feasibility and engineering consultancy across multiple regions",
       "Led development of **$125M** biomass power plant project",
-      "Managed financial structuring, PPA agreements, and negotiations",
+      "Managed financial structuring, PPA agreements, and commercial negotiations",
       "Delivered project controls, cost analysis, and technical documentation",
+      "Managed EPC, EPCM, BOT, and PPA contract structures",
     ],
   },
-];
-
-const additionalRoles = [
-  "Lead Cost Estimator / Procurement – Oil & Gas Projects",
-  "General Manager – Engineering & Construction Operations",
-  "Contracts Coordinator – EPCM Projects",
-  "Operations Manager – Mining & Logistics",
-  "Procurement Manager – Oil Drilling Operations",
-  "International Purchasing & Logistics Manager – Infrastructure Projects",
+  {
+    company: "Various Organizations",
+    location: "Venezuela, Panama, Colombia",
+    title: "Senior Engineering & Commercial Roles",
+    period: "1988 – 2010",
+    bullets: [
+      "Progressive career across engineering, procurement, operations, and commercial management",
+      "Lead Cost Estimator and Procurement Manager for major Oil & Gas projects",
+      "General Manager of Engineering & Construction operations",
+      "Contracts Coordinator for EPCM projects",
+      "Operations Manager in Mining & Logistics sectors",
+      "International Purchasing & Logistics Manager for infrastructure projects",
+      "Directed multidisciplinary teams across engineering and commercial functions",
+    ],
+  },
 ];
 
 const renderBold = (text: string) => {
@@ -175,26 +184,6 @@ const FullExperience = () => {
           ))}
         </div>
 
-        {/* Additional Leadership */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-20 p-8 rounded-lg border border-border bg-card"
-        >
-          <h3 className="text-lg font-display font-bold text-foreground mb-6">
-            Additional Leadership Experience
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {additionalRoles.map((role, i) => (
-              <div key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <span className="text-gold mt-0.5 shrink-0">▸</span>
-                {role}
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Closing Statement */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -204,7 +193,7 @@ const FullExperience = () => {
         >
           <div className="w-12 h-px bg-gold mx-auto mb-8" />
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto italic">
-            Extensive experience managing multi-million and billion-dollar projects, delivering contract strategy, commercial leadership, and project execution across complex international environments.
+            A career built on delivering results — managing multi-million and billion-dollar projects with integrity, precision, and commercial discipline across complex international environments.
           </p>
         </motion.div>
 
