@@ -102,7 +102,7 @@ const HeroSection = () => {
             </motion.div>
 
             <p className="font-body text-sm text-primary-foreground/50 tracking-widest uppercase mb-4">
-              30+ Years Experience &nbsp;·&nbsp; EPCM, EPC, Energy & Infrastructure &nbsp;·&nbsp; Contracts up to $3B+
+              35+ Years Experience &nbsp;·&nbsp; EPCM, EPC, Energy & Infrastructure &nbsp;·&nbsp; Contracts up to $3B+
             </p>
 
             <p className="font-body text-base text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
