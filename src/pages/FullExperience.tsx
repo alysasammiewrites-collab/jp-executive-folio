@@ -57,7 +57,7 @@ const fullExperiences = [
       "Secured and executed multiple private and commercial contracts",
     ],
     keyProjects: [
-      "**$25.2M** Drilling Rigs Evaluation (83 rigs) – USA",
+      "**$25.2M** Drilling Rigs Evaluation (83 rigs) – Venezuela",
       "**$2.2M** Fracking Wells Evaluation – Corsicana, Texas",
       "**$500K** Private Investment Project – Mexico",
     ],
