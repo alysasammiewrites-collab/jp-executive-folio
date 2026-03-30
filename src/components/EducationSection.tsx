@@ -1,11 +1,12 @@
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
-import { GraduationCap, Award, BookOpen, Languages, ChevronDown } from "lucide-react";
+import { GraduationCap, Award, BookOpen, Languages, ChevronDown, School } from "lucide-react";
 
 const EducationSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [showTrainings, setShowTrainings] = useState(false);
+  const [showFullEducation, setShowFullEducation] = useState(false);
 
   return (
     <section id="education" className="py-24 md:py-32 bg-section-alt">
@@ -23,29 +24,40 @@ const EducationSection = () => {
           <div className="w-12 h-px bg-gold mb-12" />
 
           <div className="space-y-10">
-            {/* Academic Education */}
+            {/* Postgraduate / Executive Education */}
             <div>
-              <h3 className="text-sm uppercase tracking-widest text-gold font-medium mb-6">Academic Education</h3>
+              <h3 className="text-sm uppercase tracking-widest text-gold font-medium mb-6">Postgraduate & Executive Education</h3>
               <div className="space-y-8">
                 <div className="flex gap-4 items-start">
                   <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-1">
                     <GraduationCap size={18} className="text-gold" />
                   </div>
                   <div>
-                    <h4 className="font-display font-bold text-lg text-foreground">Advanced Management Program (PAG)</h4>
+                    <h4 className="font-display font-bold text-lg text-foreground">Magister – Advanced Management Program (PAG)</h4>
                     <p className="text-sm text-muted-foreground">Instituto de Estudios Superiores de Administración (IESA) – Venezuela</p>
                     <p className="text-xs text-muted-foreground/70 mt-1">Feb 2003 – Oct 2004</p>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-1">
-                    <GraduationCap size={18} className="text-gold" />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-bold text-lg text-foreground">Political Science / Minor in International Studies</h4>
-                    <p className="text-sm text-muted-foreground">C.W. Post Center, Long Island University – New York, USA</p>
-                    <p className="text-xs text-muted-foreground/70 mt-1">1983 – 1985</p>
+            {/* Undergraduate Studies */}
+            <div>
+              <h3 className="text-sm uppercase tracking-widest text-gold font-medium mb-6">Undergraduate Studies</h3>
+              <div className="flex gap-4 items-start">
+                <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-1">
+                  <GraduationCap size={18} className="text-gold" />
+                </div>
+                <div>
+                  <h4 className="font-display font-bold text-lg text-foreground">
+                    Political Science / Minor in International Studies
+                  </h4>
+                  <p className="text-sm text-muted-foreground">C.W. Post Center, Long Island University – New York, USA</p>
+                  <div className="flex items-center gap-3 mt-1">
+                    <p className="text-xs text-muted-foreground/70">1983 – 1985</p>
+                    <span className="text-[10px] uppercase tracking-widest text-gold/80 font-medium border border-gold/30 rounded px-2 py-0.5">
+                      Incomplete
+                    </span>
                   </div>
                 </div>
               </div>
@@ -62,15 +74,15 @@ const EducationSection = () => {
                   <ul className="space-y-3">
                     <li>
                       <p className="text-sm text-foreground font-medium">International Procurement & Materials Management</p>
-                      <p className="text-xs text-muted-foreground">World Trade Institute, World Trade Center – New York, USA (1998)</p>
+                      <p className="text-xs text-muted-foreground">World Trade Institute, World Trade Center – New York, USA (May–Jul 1998)</p>
                     </li>
                     <li>
                       <p className="text-sm text-foreground font-medium">Project Formulation & Evaluation (Project Management)</p>
-                      <p className="text-xs text-muted-foreground">Venezuelan Board of Engineers (CIV) – Caracas (1994)</p>
+                      <p className="text-xs text-muted-foreground">Venezuelan Board of Engineers – Caracas, Venezuela (Feb–Jun 1994)</p>
                     </li>
                     <li>
-                      <p className="text-sm text-foreground font-medium">Foreign Trade (Import–Export)</p>
-                      <p className="text-xs text-muted-foreground">Venezuelan Export Association (AVEX) – Caracas (1988)</p>
+                      <p className="text-sm text-foreground font-medium">Foreign Commerce (Import/Export)</p>
+                      <p className="text-xs text-muted-foreground">Venezuelan Export Association (AVEX) – Caracas, Venezuela (Jun–Aug 1988)</p>
                     </li>
                   </ul>
                 </div>
@@ -95,20 +107,50 @@ const EducationSection = () => {
                     {showTrainings ? "Show Less" : "View Details"}
                     <ChevronDown size={14} className={`transition-transform duration-300 ${showTrainings ? "rotate-180" : ""}`} />
                   </button>
-                  {showTrainings && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      transition={{ duration: 0.3 }}
-                      className="mt-4 text-xs text-muted-foreground/70 space-y-1.5 border-l-2 border-gold/20 pl-4"
-                    >
-                      <p>Contract Management, Cost Engineering, and Risk Management</p>
-                      <p>Project Controls & Earned Value Analysis (EVA)</p>
-                      <p>Health, Safety & Environment (HSE) Compliance</p>
-                      <p>Leadership, Negotiation & Commercial Strategy</p>
-                      <p>Procurement & Supply Chain Management</p>
-                    </motion.div>
-                  )}
+                  <AnimatePresence>
+                    {showTrainings && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="mt-4 text-xs text-muted-foreground/70 space-y-1.5 border-l-2 border-gold/20 pl-4"
+                      >
+                        <p>Contract Management, Cost Engineering, and Risk Management</p>
+                        <p>Project Controls & Earned Value Analysis (EVA)</p>
+                        <p>Health, Safety & Environment (HSE) Compliance</p>
+                        <p>Leadership, Negotiation & Commercial Strategy</p>
+                        <p>Procurement & Supply Chain Management</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
+            </div>
+
+            {/* High School */}
+            <div>
+              <h3 className="text-sm uppercase tracking-widest text-gold font-medium mb-6">Secondary Education</h3>
+              <div className="space-y-6">
+                <div className="flex gap-4 items-start">
+                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-1">
+                    <School size={18} className="text-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-foreground">Shattuck-St. Mary's School</h4>
+                    <p className="text-sm text-muted-foreground">Minnesota, USA</p>
+                    <p className="text-xs text-muted-foreground/70 mt-1">1981 – 1983</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-1">
+                    <School size={18} className="text-gold" />
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-foreground">Blair Academy</h4>
+                    <p className="text-sm text-muted-foreground">New Jersey, USA</p>
+                    <p className="text-xs text-muted-foreground/70 mt-1">1979 – 1981</p>
+                  </div>
                 </div>
               </div>
             </div>

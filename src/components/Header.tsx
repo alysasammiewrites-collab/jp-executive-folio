@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -9,6 +10,7 @@ const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Achievements", href: "#achievements" },
   { label: "Education", href: "#education" },
+  { label: "References", href: "#references" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -47,6 +49,7 @@ const Header = () => {
               {item.label}
             </a>
           ))}
+          <LanguageToggle />
         </nav>
 
         <button
