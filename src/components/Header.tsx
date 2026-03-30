@@ -49,6 +49,7 @@ const Header = () => {
               {item.label}
             </a>
           ))}
+          <LanguageToggle />
         </nav>
 
         <button
