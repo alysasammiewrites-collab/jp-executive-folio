@@ -3,20 +3,22 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 import LanguageToggle from "@/components/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Expertise", href: "#expertise" },
-  { label: "Experience", href: "#experience" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Education", href: "#education" },
-  { label: "References", href: "#references" },
-  { label: "Contact", href: "#contact" },
+const navKeys = [
+  { key: "nav.about", href: "#about" },
+  { key: "nav.expertise", href: "#expertise" },
+  { key: "nav.experience", href: "#experience" },
+  { key: "nav.achievements", href: "#achievements" },
+  { key: "nav.education", href: "#education" },
+  { key: "nav.references", href: "#references" },
+  { key: "nav.contact", href: "#contact" },
 ];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -40,13 +42,13 @@ const Header = () => {
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+          {navKeys.map((item) => (
             <a
               key={item.href}
               href={item.href}
               className="text-xs uppercase tracking-widest text-primary-foreground/70 hover:text-gold transition-colors duration-300 font-medium"
             >
-              {item.label}
+              {t(item.key)}
             </a>
           ))}
           <LanguageToggle />
@@ -67,16 +69,17 @@ const Header = () => {
           className="md:hidden bg-navy/95 backdrop-blur-md border-t border-gold/10"
         >
           <nav className="flex flex-col items-center gap-4 py-6">
-            {navItems.map((item) => (
+            {navKeys.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-xs uppercase tracking-widest text-primary-foreground/70 hover:text-gold transition-colors"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             ))}
+            <LanguageToggle />
           </nav>
         </motion.div>
       )}

@@ -1,17 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Globe } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
-const regions = [
-  { name: "Latin America", detail: "Chile, Venezuela, Peru, Colombia, Mexico, Panama" },
-  { name: "United States", detail: "Corsicana, Texas – Fracking Wells Consultancy" },
-  { name: "Nigeria (MEA)", detail: "Chevron Offshore Operations" },
-  { name: "Caribbean", detail: "Sint Maarten – Environmental & Energy Projects" },
-];
+const regionKeys = ["latam", "usa", "nigeria", "caribbean"];
 
 const GlobalSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
 
   return (
     <section className="py-24 md:py-32 bg-background">
@@ -22,16 +19,14 @@ const GlobalSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">Reach</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-            Global Experience
-          </h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">{t("global.label")}</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">{t("global.title")}</h2>
           <div className="w-12 h-px bg-gold mb-12" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {regions.map((region, i) => (
+            {regionKeys.map((key, i) => (
               <motion.div
-                key={region.name}
+                key={key}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
@@ -39,8 +34,8 @@ const GlobalSection = () => {
               >
                 <Globe size={24} className="text-gold shrink-0" />
                 <div>
-                  <h3 className="font-display font-bold text-foreground">{region.name}</h3>
-                  <p className="text-sm text-muted-foreground">{region.detail}</p>
+                  <h3 className="font-display font-bold text-foreground">{t(`global.${key}`)}</h3>
+                  <p className="text-sm text-muted-foreground">{t(`global.${key}Detail`)}</p>
                 </div>
               </motion.div>
             ))}

@@ -1,6 +1,9 @@
 import { Linkedin } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-navy py-12">
       <div className="container mx-auto px-6 text-center">
@@ -8,7 +11,7 @@ const Footer = () => {
           Juan Pablo García Huizi
         </p>
         <p className="text-xs uppercase tracking-widest text-primary-foreground/50 mb-6">
-          Senior Contract Management & Commercial Leader
+          {t("footer.title")}
         </p>
         <a
           href="https://linkedin.com/in/juan-pablo-garcia-huizi-7520a827"
@@ -21,7 +24,7 @@ const Footer = () => {
         </a>
         <div className="mt-8 pt-6 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/30">
-            © {new Date().getFullYear()} Juan Pablo García Huizi. All rights reserved.
+            © {new Date().getFullYear()} Juan Pablo García Huizi. {t("footer.rights")}
           </p>
         </div>
       </div>
