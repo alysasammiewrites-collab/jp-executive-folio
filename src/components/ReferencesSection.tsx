@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { User, Phone, Mail, Building } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const references = [
   {
@@ -45,6 +46,7 @@ const references = [
 const ReferencesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
 
   return (
     <section id="references" className="py-24 md:py-32 bg-section-alt">
@@ -55,10 +57,8 @@ const ReferencesSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">Endorsements</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-            Professional References
-          </h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">{t("ref.label")}</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">{t("ref.title")}</h2>
           <div className="w-12 h-px bg-gold mb-12" />
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -86,7 +86,7 @@ const ReferencesSection = () => {
                     <p className="text-xs text-muted-foreground">{person.company}</p>
                   </div>
                   {person.former && (
-                    <p className="text-xs text-muted-foreground/60 ml-5">Former: {person.former}</p>
+                    <p className="text-xs text-muted-foreground/60 ml-5">{t("ref.former")}: {person.former}</p>
                   )}
                   <div className="flex items-center gap-2">
                     <Phone size={13} className="text-gold/60 shrink-0" />
@@ -105,9 +105,7 @@ const ReferencesSection = () => {
             ))}
           </div>
 
-          <p className="mt-10 text-xs text-muted-foreground/60 italic text-center">
-            Available upon request for direct verification.
-          </p>
+          <p className="mt-10 text-xs text-muted-foreground/60 italic text-center">{t("ref.available")}</p>
         </motion.div>
       </div>
     </section>

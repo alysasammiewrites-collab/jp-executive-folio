@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
 
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
@@ -15,21 +16,17 @@ const AboutSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">About</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-            Executive Summary
-          </h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-4">{t("about.label")}</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">{t("about.title")}</h2>
           <div className="w-12 h-px bg-gold mb-10" />
 
           <div className="space-y-6 text-muted-foreground leading-relaxed font-body text-base md:text-lg">
+            <p>{t("about.p1")}</p>
             <p>
-              Senior Contract Management and Commercial Leader with over 30 years of international experience spanning Oil & Gas, Mining, Infrastructure, Renewable Energy, and Data Center projects. Recognized for deep expertise in EPCM/EPC contract structures, claims management, risk allocation, and high-stakes commercial negotiations.
+              {t("about.p2")} <span className="text-foreground font-semibold">{t("about.p2value")}</span>{t("about.p2rest")}
             </p>
             <p>
-              Proven track record managing contracts valued up to <span className="text-foreground font-semibold">$3B+</span>, leading cross-functional teams, and delivering measurable commercial outcomes through strategic contract planning, rigorous cost control, and effective dispute resolution.
-            </p>
-            <p>
-              Extensive global exposure across <span className="text-foreground font-semibold">Latin America, the United States, Nigeria</span>, and the <span className="text-foreground font-semibold">Caribbean</span>, with a demonstrated ability to navigate complex multinational stakeholder environments, regulatory frameworks, and contractor ecosystems.
+              {t("about.p3a")} <span className="text-foreground font-semibold">{t("about.p3regions")}</span>{t("about.p3and")} <span className="text-foreground font-semibold">{t("about.p3caribbean")}</span>{t("about.p3rest")}
             </p>
           </div>
         </motion.div>
