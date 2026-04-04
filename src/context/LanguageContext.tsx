@@ -230,7 +230,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.5.title": { EN: "Managing Director / Lead Consultant", ES: "Director General / Consultor Principal" },
   "fexp.5.period": { EN: "Jan 2010 – Dec 2013", ES: "Enero 2010 – Diciembre 2013" },
   "fexp.5.b0": { EN: "Delivered feasibility and engineering consultancy across multiple regions", ES: "Consultorías de factibilidad económica e ingeniería en diversas regiones" },
-  "fexp.5.b1": { EN: "Led development of **$125M** biomass power plant project", ES: "Lideré el desarrollo de un proyecto de planta de energía de biomasa de **$125 millones**" },
+  "fexp.5.b1": { EN: "Led development of **$125M** biomass power plant project", ES: "Lideré el desarrollo de un proyecto de planta de energía de biomasa de USD **$125 millones**" },
   "fexp.5.b2": { EN: "Managed financial structuring, PPA agreements, and commercial negotiations", ES: "Gestioné la estructuración financiera, los acuerdos de compra de energía (PPA) y las negociaciones comerciales" },
   "fexp.5.b3": { EN: "Delivered project controls, cost analysis, and technical documentation", ES: "Realicé el control de proyectos, el análisis de costos y la documentación técnica" },
   "fexp.5.b4": { EN: "Managed EPC, EPCM, BOT, and PPA contract structures", ES: "Gestioné estructuras contractuales EPC, EPCM, BOT y PPA" },
