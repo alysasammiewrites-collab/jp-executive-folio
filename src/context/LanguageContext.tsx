@@ -178,7 +178,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fullexp.back": { EN: "Back to Home", ES: "Volver al Inicio" },
   "fullexp.label": { EN: "Career", ES: "Carrera y/o Trayectoria Profesional" },
   "fullexp.title": { EN: "Full Career Experience", ES: "Experiencia Profesional Completa" },
-  "fullexp.intro": { EN: "Over **35 years** of progressive experience across contract management, project controls, procurement, and commercial leadership within global Oil & Gas, Mining, Energy, and Infrastructure projects.", ES: "Más de **35 años** de experiencia progresiva en gestión de contratos, control de proyectos, adquisiciones y liderazgo comercial en proyectos globales de petróleo y gas, minería, energía e infraestructura." },
+  "fullexp.intro": { EN: "Over **35 years** of progressive experience across contract management, project controls, procurement, and commercial leadership within global Oil & Gas, Mining, Energy, and Infrastructure projects.", ES: "Más de **35 años** de experiencia progresiva en gestión de contratos, control de proyectos, compras y liderazgo comercial en proyectos globales de petróleo y gas, minería, energía e infraestructura." },
   "fullexp.closing": { EN: "A career built on delivering results — managing multi-million and billion-dollar projects with integrity, precision, and commercial discipline across complex international environments.", ES: "Una trayectoria profesional basada en la consecución de resultados gestionando proyectos multimillonarios con integridad, precisión y disciplina comercial en complejos entornos internacionales." },
   "fullexp.keyProjects": { EN: "Key Projects", ES: "Proyectos Clave" },
 
