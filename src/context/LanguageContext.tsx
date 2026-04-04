@@ -212,7 +212,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.3.period": { EN: "Jan 2014 – Jan 2017", ES: "Enero de 2014 – Enero de 2017" },
   "fexp.3.b0": { EN: "Led multi-country consultancy projects across the United States, Mexico, and Venezuela", ES: "Lideré proyectos de consultoría multinacionales en Estados Unidos, México y Venezuela" },
   "fexp.3.b1": { EN: "Delivered cost estimation, feasibility studies, and investment planning", ES: "Realicé estimaciones de costos, estudios de factibilidad y planificación de inversiones" },
-  "fexp.3.b2": { EN: "Managed engineering evaluations, procurement, and project execution", ES: "Gestioné evaluaciones de ingeniería, adquisiciones y ejecución de proyectos" },
+  "fexp.3.b2": { EN: "Managed engineering evaluations, procurement, and project execution", ES: "Gestioné evaluaciones de ingeniería, compras y ejecución de proyectos" },
   "fexp.3.b3": { EN: "Secured and executed multiple private and commercial contracts", ES: "Obtuve y ejecuté múltiples contratos privados y comerciales" },
   "fexp.3.kp0": { EN: "**$25.2M** Drilling Rigs Evaluation (83 rigs) – Venezuela", ES: "Evaluación de Taladros y Plataformas de Perforación (83 taladros y plataformas) por USD **$25.2 millones** – Venezuela" },
   "fexp.3.kp1": { EN: "**$2.2M** Fracking Wells Evaluation – Corsicana, Texas", ES: "Evaluación de Pozos de Fracturación Hidráulica por USD **$2.2 millones** – Corsicana, Texas" },
