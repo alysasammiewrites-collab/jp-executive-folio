@@ -6,13 +6,13 @@ import { useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const fullExperiences = [
-  { company: "CyD Ingeniería", location: "Chile", bulletCount: 6, hasKeyProjects: false },
-  { company: "CyD Ingeniería – Mainstream Renewable Power", location: "Chile", bulletCount: 6, hasKeyProjects: false },
-  { company: "Bechtel – MLP-INCO Mining Project", location: "Chile", bulletCount: 4, hasKeyProjects: false },
-  { company: "J.P. Environmental Consulting & Construction", location: "USA, Mexico, Venezuela", bulletCount: 4, hasKeyProjects: true, kpCount: 3 },
-  { company: "Chevron Nigeria – Funiwa Gas Project (Offshore)", location: "Nigeria", bulletCount: 6, hasKeyProjects: false },
-  { company: "J.P. Environmental Consulting", location: "Peru, Colombia, Caribbean", bulletCount: 5, hasKeyProjects: false },
-  { company: "Various Organizations", location: "Venezuela, Panama, Colombia", bulletCount: 7, hasKeyProjects: false },
+  { companyKey: "fexp.company.0", location: "Chile", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.1", location: "Chile", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.2", location: "Chile", bulletCount: 4, hasKeyProjects: false },
+  { companyKey: "fexp.company.3", location: "USA, Mexico, Venezuela", bulletCount: 4, hasKeyProjects: true, kpCount: 3 },
+  { companyKey: "fexp.company.4", location: "Nigeria", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.5", location: "Peru, Colombia, Caribbean", bulletCount: 5, hasKeyProjects: false },
+  { companyKey: "fexp.company.6", location: "Venezuela, Panama, Colombia", bulletCount: 7, hasKeyProjects: false },
 ];
 
 const renderBold = (text: string) => {
