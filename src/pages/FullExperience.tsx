@@ -67,7 +67,7 @@ const FullExperience = () => {
               <div className="absolute left-2.5 md:left-[-4px] top-1 w-2.5 h-2.5 rounded-full bg-gold border-2 border-background" />
               <p className="text-xs uppercase tracking-widest text-gold font-medium mb-1">{t(`fexp.${i}.period`)}</p>
               <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-1">{t(`fexp.${i}.title`)}</h3>
-              <p className="text-sm text-muted-foreground mb-4">{exp.company} · {exp.location}</p>
+              <p className="text-sm text-muted-foreground mb-4">{t(exp.companyKey)} · {exp.location}</p>
               <ul className="space-y-2.5">
                 {Array.from({ length: exp.bulletCount }, (_, j) => (
                   <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
