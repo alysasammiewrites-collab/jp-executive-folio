@@ -244,6 +244,15 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.6.b4": { EN: "Operations Manager in Mining & Logistics sectors", ES: "Gerente de Operaciones en los sectores de minería y logística" },
   "fexp.6.b5": { EN: "International Purchasing & Logistics Manager for infrastructure projects", ES: "Gerente de Compras Internacionales y Logística para proyectos de infraestructura" },
   "fexp.6.b6": { EN: "Directed multidisciplinary teams across engineering and commercial functions", ES: "Lideré equipos multidisciplinarios en las áreas de ingeniería y gestión comercial" },
+
+  // Full experience company names
+  "fexp.company.0": { EN: "CyD Ingeniería", ES: "CyD Ingeniería" },
+  "fexp.company.1": { EN: "CyD Ingeniería – Mainstream Renewable Power", ES: "CyD Ingeniería – Mainstream Renewable Power" },
+  "fexp.company.2": { EN: "Bechtel – MLP-INCO Mining Project", ES: "Bechtel – Proyecto Minero MLP-INCO" },
+  "fexp.company.3": { EN: "J.P. Environmental Consulting & Construction", ES: "J.P. Environmental Consulting & Construction" },
+  "fexp.company.4": { EN: "Chevron Nigeria – Funiwa Gas Project (Offshore)", ES: "Chevron Nigeria – Proyecto de Gas Funiwa (Offshore)" },
+  "fexp.company.5": { EN: "J.P. Environmental Consulting", ES: "J.P. Environmental Consulting" },
+  "fexp.company.6": { EN: "Various Organizations", ES: "Organizaciones Varias" },
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
