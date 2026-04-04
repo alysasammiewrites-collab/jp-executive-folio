@@ -70,8 +70,8 @@ const translations: Record<string, Record<Lang, string>> = {
   // Experience items
   "exp.0.period": { EN: "Nov 2023 – Present", ES: "Noviembre de 2023 – Presente" },
   "exp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
-  "exp.0.highlight": { EN: "$250M+ Data Center Project", ES: "Proyecto de Centro de Datos de más de $250 millones" },
-  "exp.0.b0": { EN: "Lead contract management for $250M+ data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de $250 millones (infraestructura de 40 MW)" },
+  "exp.0.highlight": { EN: "$250M+ Data Center Project", ES: "Proyecto de Centro de Datos de más de USD $250 millones" },
+  "exp.0.b0": { EN: "Lead contract management for $250M+ data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD $250 millones (infraestructura de 40 MW)" },
   "exp.0.b1": { EN: "Draft, negotiate, and administer EPCM and supplier contracts", ES: "Redacté, negocié y administré contratos EPCM y PMG con proveedores" },
   "exp.0.b2": { EN: "Identify and mitigate commercial and contractual risks across project lifecycle", ES: "Identifiqué y mitigué riesgos comerciales y contractuales a lo largo del ciclo de vida del proyecto" },
   "exp.0.b3": { EN: "Monitor budgets and implement cost optimization strategies", ES: "Monitoreé presupuestos e implementé estrategias de optimización de costos" },
