@@ -194,7 +194,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   "fexp.1.title": { EN: "Senior Contract Administrator", ES: "Administrador Senior de Contratos" },
   "fexp.1.period": { EN: "Jul 2021 – Sep 2023", ES: "Julio 2021 – Septiembre 2023" },
-  "fexp.1.b0": { EN: "Managed contracts for a **$100M** solar energy project (105MW plant)", ES: "Gestioné contratos para un proyecto de energía solar de **$100 millones** (planta de 105 MW)" },
+  "fexp.1.b0": { EN: "Managed contracts for a **$100M** solar energy project (105MW plant)", ES: "Gestioné contratos para un proyecto de energía solar de USD **$100 millones** (planta de 105 MW)" },
   "fexp.1.b1": { EN: "Administered contract amendments, including COVID-related adjustments", ES: "Administré modificaciones contractuales, incluyendo ajustes relacionados con la COVID-19" },
   "fexp.1.b2": { EN: "Managed **$24M** in performance and advance payment bonds", ES: "Gestioné y ejecuté USD **$24 millones** en fianzas de cumplimiento y anticipos" },
   "fexp.1.b3": { EN: "Resolved **29** contractual claims and breaches", ES: "Resolví **29** reclamaciones e incumplimientos contractuales" },
