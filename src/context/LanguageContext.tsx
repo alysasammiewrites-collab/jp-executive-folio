@@ -28,7 +28,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   // Hero
   "hero.title": { EN: "Senior Contract Management & Commercial Leader", ES: "Líder Sénior en Gestión de Contratos y Asuntos Comerciales" },
-  "hero.stats": { EN: "35+ Years Experience  ·  EPCM, EPC, Energy & Infrastructure  ·  Contracts up to $3B+", ES: "Más de 35 Años de Experiencia  ·  EPCM, EPC, Energía e Infraestructura  ·  Contratos de hasta más de 3 Billones de Dólares" },
+  "hero.stats": { EN: "35+ Years Experience  ·  EPCM, EPC, Energy & Infrastructure  ·  Contracts up to $3B+", ES: "Más de 35 Años de Experiencia  ·  EPCM, EPC, Energía e Infraestructura  ·  Contratos de hasta más de USD $3 Billones" },
   "hero.subtitle": { EN: "Delivering commercial strategy, contract leadership, and risk-managed outcomes across global projects.", ES: "Entregando estrategias comerciales, liderazgo contractual y resultados con gestión de riesgos en proyectos globales." },
   "hero.viewExperience": { EN: "View Experience", ES: "Ver Experiencia" },
   "hero.downloadCV": { EN: "Download CV", ES: "Bajar CV" },
@@ -57,7 +57,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "expertise.5": { EN: "Change Order Management", ES: "Gestión de Órdenes de Cambio" },
   "expertise.6": { EN: "Risk Management", ES: "Gestión de Riesgos" },
   "expertise.7": { EN: "Cost Control & Budgeting", ES: "Control de Costos y Presupuestos" },
-  "expertise.8": { EN: "Procurement & Supplier Management", ES: "Adquisiciones y Gestión de Proveedores" },
+  "expertise.8": { EN: "Procurement & Supplier Management", ES: "Compras y Gestión de Proveedores" },
   "expertise.9": { EN: "Project Controls (EVM, KPI, WBS, CBS)", ES: "Control de Proyectos (EVM, KPI, WBS, CBS)" },
   "expertise.10": { EN: "Tendering (RFQ, RFP, ITB)", ES: "Licitaciones (RFQ, RFP, ITB)" },
   "expertise.11": { EN: "Stakeholder Management", ES: "Gestión de Partes Interesadas" },
@@ -70,17 +70,17 @@ const translations: Record<string, Record<Lang, string>> = {
   // Experience items
   "exp.0.period": { EN: "Nov 2023 – Present", ES: "Noviembre de 2023 – Presente" },
   "exp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
-  "exp.0.highlight": { EN: "$250M+ Data Center Project", ES: "Proyecto de Centro de Datos de más de $250 millones" },
-  "exp.0.b0": { EN: "Lead contract management for $250M+ data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de $250 millones (infraestructura de 40 MW)" },
+  "exp.0.highlight": { EN: "$250M+ Data Center Project", ES: "Proyecto de Centro de Datos de más de USD $250 millones" },
+  "exp.0.b0": { EN: "Lead contract management for $250M+ data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD $250 millones (infraestructura de 40 MW)" },
   "exp.0.b1": { EN: "Draft, negotiate, and administer EPCM and supplier contracts", ES: "Redacté, negocié y administré contratos EPCM y PMG con proveedores" },
   "exp.0.b2": { EN: "Identify and mitigate commercial and contractual risks across project lifecycle", ES: "Identifiqué y mitigué riesgos comerciales y contractuales a lo largo del ciclo de vida del proyecto" },
   "exp.0.b3": { EN: "Monitor budgets and implement cost optimization strategies", ES: "Monitoreé presupuestos e implementé estrategias de optimización de costos" },
 
   "exp.1.period": { EN: "Jul 2021 – Sep 2023", ES: "Julio 2021 – Septiembre 2023" },
   "exp.1.title": { EN: "Senior Contract Administrator", ES: "Administrador Senior de Contratos" },
-  "exp.1.highlight": { EN: "$100M Solar Plant", ES: "Planta Solar de $100M" },
-  "exp.1.b0": { EN: "Managed contracts for $100M renewable energy project (105MW solar plant)", ES: "Gestioné contratos para un proyecto de energía renovable de $100M (planta solar de 105MW)" },
-  "exp.1.b1": { EN: "Secured $24M in performance and advance payment bonds", ES: "Obtuve y ejecuté $24M en fianzas de cumplimiento y anticipos" },
+  "exp.1.highlight": { EN: "Secured & Executed $24M in Bonds", ES: "Obtuve y ejecuté USD $24 millones en fianzas" },
+  "exp.1.b0": { EN: "Managed contracts for $100M renewable energy project (105MW solar plant)", ES: "Gestioné contratos para un proyecto de energía renovable de USD $100 millones (planta solar de 105MW)" },
+  "exp.1.b1": { EN: "Secured & executed $24M in performance and advance payment bonds", ES: "Obtuve y ejecuté USD $24 millones en fianzas de cumplimiento y anticipos" },
   "exp.1.b2": { EN: "Managed 29+ contractual claims and breach cases", ES: "Gestioné más de 29 reclamaciones contractuales y casos de incumplimiento" },
   "exp.1.b3": { EN: "Controlled delay damages and negotiated extension of time (EOT) claims", ES: "Controlé los daños por demora y negocié extensiones de plazo (EOT)" },
 
@@ -102,8 +102,8 @@ const translations: Record<string, Record<Lang, string>> = {
   "exp.4.period": { EN: "Jan 2010 – Jan 2017", ES: "Enero de 2010 – Enero de 2017" },
   "exp.4.title": { EN: "Managing Director / Contract & Project Consultant", ES: "Director General / Consultor de Contratos y Proyectos" },
   "exp.4.highlight": { EN: "$125M Project Delivered", ES: "Proyecto de USD $125 millones entregado" },
-  "exp.4.b0": { EN: "Led contract strategy, procurement, and project controls across multiple projects", ES: "Lideré la estrategia de contratos, adquisiciones y control de proyectos en múltiples proyectos" },
-  "exp.4.b1": { EN: "Delivered $125M biomass power project feasibility and contract structuring", ES: "Realicé el estudio de viabilidad y la estructuración contractual de un proyecto de energía de biomasa de $125 millones" },
+  "exp.4.b0": { EN: "Led contract strategy, procurement, and project controls across multiple projects", ES: "Lideré la estrategia de contratos, compras y control de proyectos en múltiples proyectos" },
+  "exp.4.b1": { EN: "Delivered $125M biomass power project feasibility and contract structuring", ES: "Realicé el estudio de viabilidad y la estructuración contractual de un proyecto de energía de biomasa de USD $125 millones" },
   "exp.4.b2": { EN: "Managed EPC, EPCM, BOT, and PPA contract structures", ES: "Gestioné estructuras contractuales EPC, EPCM, BOT y PPA" },
   "exp.4.b3": { EN: "Directed multidisciplinary teams across engineering and commercial functions", ES: "Dirigí equipos multidisciplinarios en las áreas de ingeniería y aspectos comerciales" },
 
@@ -123,7 +123,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "edu.viewDetails": { EN: "View Details", ES: "Ver detalles" },
   "edu.hideDetails": { EN: "Hide Details", ES: "Ocultar detalles" },
   "edu.postgrad": { EN: "Postgraduate & Executive Education", ES: "Estudios de Posgrado y Ejecutivos" },
-  "edu.magister": { EN: "Magister – Advanced Management Program (PAG)", ES: "Maestría – Programa Avanzado de Gestión (PAG)" },
+  "edu.magister": { EN: "Magister – Advanced Management Program (PAG)", ES: "Magíster – Programa Avanzado de Gestión (PAG)" },
   "edu.iesaLocation": { EN: "Instituto de Estudios Superiores de Administración (IESA) – Venezuela", ES: "Instituto de Estudios Superiores de Administración (IESA) – Venezuela" },
   "edu.undergrad": { EN: "Undergraduate Studies", ES: "Estudios de Pregrado" },
   "edu.polsci": { EN: "Political Science / Minor in International Studies", ES: "Ciencias Políticas / Mención en Estudios Internacionales" },
@@ -178,14 +178,14 @@ const translations: Record<string, Record<Lang, string>> = {
   "fullexp.back": { EN: "Back to Home", ES: "Volver al Inicio" },
   "fullexp.label": { EN: "Career", ES: "Carrera y/o Trayectoria Profesional" },
   "fullexp.title": { EN: "Full Career Experience", ES: "Experiencia Profesional Completa" },
-  "fullexp.intro": { EN: "Over **35 years** of progressive experience across contract management, project controls, procurement, and commercial leadership within global Oil & Gas, Mining, Energy, and Infrastructure projects.", ES: "Más de **35 años** de experiencia progresiva en gestión de contratos, control de proyectos, adquisiciones y liderazgo comercial en proyectos globales de petróleo y gas, minería, energía e infraestructura." },
+  "fullexp.intro": { EN: "Over **35 years** of progressive experience across contract management, project controls, procurement, and commercial leadership within global Oil & Gas, Mining, Energy, and Infrastructure projects.", ES: "Más de **35 años** de experiencia progresiva en gestión de contratos, control de proyectos, compras y liderazgo comercial en proyectos globales de petróleo y gas, minería, energía e infraestructura." },
   "fullexp.closing": { EN: "A career built on delivering results — managing multi-million and billion-dollar projects with integrity, precision, and commercial discipline across complex international environments.", ES: "Una trayectoria profesional basada en la consecución de resultados gestionando proyectos multimillonarios con integridad, precisión y disciplina comercial en complejos entornos internacionales." },
   "fullexp.keyProjects": { EN: "Key Projects", ES: "Proyectos Clave" },
 
   // Full experience items
   "fexp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
   "fexp.0.period": { EN: "Nov 2023 – Present", ES: "Noviembre de 2023 – Presente" },
-  "fexp.0.b0": { EN: "Leading contract management for a **$250M** data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de **$250 millones** (infraestructura de 40 MW)" },
+  "fexp.0.b0": { EN: "Leading contract management for a **$250M** data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD **$250 millones** (infraestructura de 40 MW)" },
   "fexp.0.b1": { EN: "Drafting, negotiating, and administering EPCM and supplier contracts", ES: "Redacté, negocié y administré de contratos PMG & EPCM con proveedores" },
   "fexp.0.b2": { EN: "Driving risk identification and mitigation strategies across the full project lifecycle", ES: "Impulsé estrategias de identificación y mitigación de riesgos a lo largo de todo el ciclo de vida del proyecto" },
   "fexp.0.b3": { EN: "Overseeing budgeting, cost control, and contract documentation", ES: "Supervisé del presupuesto, el control de costos y la documentación contractual" },
@@ -194,7 +194,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   "fexp.1.title": { EN: "Senior Contract Administrator", ES: "Administrador Senior de Contratos" },
   "fexp.1.period": { EN: "Jul 2021 – Sep 2023", ES: "Julio 2021 – Septiembre 2023" },
-  "fexp.1.b0": { EN: "Managed contracts for a **$100M** solar energy project (105MW plant)", ES: "Gestioné contratos para un proyecto de energía solar de **$100 millones** (planta de 105 MW)" },
+  "fexp.1.b0": { EN: "Managed contracts for a **$100M** solar energy project (105MW plant)", ES: "Gestioné contratos para un proyecto de energía solar de USD **$100 millones** (planta de 105 MW)" },
   "fexp.1.b1": { EN: "Administered contract amendments, including COVID-related adjustments", ES: "Administré modificaciones contractuales, incluyendo ajustes relacionados con la COVID-19" },
   "fexp.1.b2": { EN: "Managed **$24M** in performance and advance payment bonds", ES: "Gestioné y ejecuté USD **$24 millones** en fianzas de cumplimiento y anticipos" },
   "fexp.1.b3": { EN: "Resolved **29** contractual claims and breaches", ES: "Resolví **29** reclamaciones e incumplimientos contractuales" },
@@ -212,7 +212,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.3.period": { EN: "Jan 2014 – Jan 2017", ES: "Enero de 2014 – Enero de 2017" },
   "fexp.3.b0": { EN: "Led multi-country consultancy projects across the United States, Mexico, and Venezuela", ES: "Lideré proyectos de consultoría multinacionales en Estados Unidos, México y Venezuela" },
   "fexp.3.b1": { EN: "Delivered cost estimation, feasibility studies, and investment planning", ES: "Realicé estimaciones de costos, estudios de factibilidad y planificación de inversiones" },
-  "fexp.3.b2": { EN: "Managed engineering evaluations, procurement, and project execution", ES: "Gestioné evaluaciones de ingeniería, adquisiciones y ejecución de proyectos" },
+  "fexp.3.b2": { EN: "Managed engineering evaluations, procurement, and project execution", ES: "Gestioné evaluaciones de ingeniería, compras y ejecución de proyectos" },
   "fexp.3.b3": { EN: "Secured and executed multiple private and commercial contracts", ES: "Obtuve y ejecuté múltiples contratos privados y comerciales" },
   "fexp.3.kp0": { EN: "**$25.2M** Drilling Rigs Evaluation (83 rigs) – Venezuela", ES: "Evaluación de Taladros y Plataformas de Perforación (83 taladros y plataformas) por USD **$25.2 millones** – Venezuela" },
   "fexp.3.kp1": { EN: "**$2.2M** Fracking Wells Evaluation – Corsicana, Texas", ES: "Evaluación de Pozos de Fracturación Hidráulica por USD **$2.2 millones** – Corsicana, Texas" },
@@ -230,7 +230,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.5.title": { EN: "Managing Director / Lead Consultant", ES: "Director General / Consultor Principal" },
   "fexp.5.period": { EN: "Jan 2010 – Dec 2013", ES: "Enero 2010 – Diciembre 2013" },
   "fexp.5.b0": { EN: "Delivered feasibility and engineering consultancy across multiple regions", ES: "Consultorías de factibilidad económica e ingeniería en diversas regiones" },
-  "fexp.5.b1": { EN: "Led development of **$125M** biomass power plant project", ES: "Lideré el desarrollo de un proyecto de planta de energía de biomasa de **$125 millones**" },
+  "fexp.5.b1": { EN: "Led development of **$125M** biomass power plant project", ES: "Lideré el desarrollo de un proyecto de planta de energía de biomasa de USD **$125 millones**" },
   "fexp.5.b2": { EN: "Managed financial structuring, PPA agreements, and commercial negotiations", ES: "Gestioné la estructuración financiera, los acuerdos de compra de energía (PPA) y las negociaciones comerciales" },
   "fexp.5.b3": { EN: "Delivered project controls, cost analysis, and technical documentation", ES: "Realicé el control de proyectos, el análisis de costos y la documentación técnica" },
   "fexp.5.b4": { EN: "Managed EPC, EPCM, BOT, and PPA contract structures", ES: "Gestioné estructuras contractuales EPC, EPCM, BOT y PPA" },
@@ -244,6 +244,15 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.6.b4": { EN: "Operations Manager in Mining & Logistics sectors", ES: "Gerente de Operaciones en los sectores de minería y logística" },
   "fexp.6.b5": { EN: "International Purchasing & Logistics Manager for infrastructure projects", ES: "Gerente de Compras Internacionales y Logística para proyectos de infraestructura" },
   "fexp.6.b6": { EN: "Directed multidisciplinary teams across engineering and commercial functions", ES: "Lideré equipos multidisciplinarios en las áreas de ingeniería y gestión comercial" },
+
+  // Full experience company names
+  "fexp.company.0": { EN: "CyD Ingeniería", ES: "CyD Ingeniería" },
+  "fexp.company.1": { EN: "CyD Ingeniería – Mainstream Renewable Power", ES: "CyD Ingeniería – Mainstream Renewable Power" },
+  "fexp.company.2": { EN: "Bechtel – MLP-INCO Mining Project", ES: "Bechtel – Proyecto Minero MLP-INCO" },
+  "fexp.company.3": { EN: "J.P. Environmental Consulting & Construction", ES: "J.P. Environmental Consulting & Construction" },
+  "fexp.company.4": { EN: "Chevron Nigeria – Funiwa Gas Project (Offshore)", ES: "Chevron Nigeria – Proyecto de Gas Funiwa (Offshore)" },
+  "fexp.company.5": { EN: "J.P. Environmental Consulting", ES: "J.P. Environmental Consulting" },
+  "fexp.company.6": { EN: "Various Organizations", ES: "Organizaciones Varias" },
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {

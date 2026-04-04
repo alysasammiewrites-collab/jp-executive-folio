@@ -6,13 +6,13 @@ import { useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const fullExperiences = [
-  { company: "CyD Ingeniería", location: "Chile", bulletCount: 6, hasKeyProjects: false },
-  { company: "CyD Ingeniería – Mainstream Renewable Power", location: "Chile", bulletCount: 6, hasKeyProjects: false },
-  { company: "Bechtel – MLP-INCO Mining Project", location: "Chile", bulletCount: 4, hasKeyProjects: false },
-  { company: "J.P. Environmental Consulting & Construction", location: "USA, Mexico, Venezuela", bulletCount: 4, hasKeyProjects: true, kpCount: 3 },
-  { company: "Chevron Nigeria – Funiwa Gas Project (Offshore)", location: "Nigeria", bulletCount: 6, hasKeyProjects: false },
-  { company: "J.P. Environmental Consulting", location: "Peru, Colombia, Caribbean", bulletCount: 5, hasKeyProjects: false },
-  { company: "Various Organizations", location: "Venezuela, Panama, Colombia", bulletCount: 7, hasKeyProjects: false },
+  { companyKey: "fexp.company.0", location: "Chile", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.1", location: "Chile", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.2", location: "Chile", bulletCount: 4, hasKeyProjects: false },
+  { companyKey: "fexp.company.3", location: "USA, Mexico, Venezuela", bulletCount: 4, hasKeyProjects: true, kpCount: 3 },
+  { companyKey: "fexp.company.4", location: "Nigeria", bulletCount: 6, hasKeyProjects: false },
+  { companyKey: "fexp.company.5", location: "Peru, Colombia, Caribbean", bulletCount: 5, hasKeyProjects: false },
+  { companyKey: "fexp.company.6", location: "Venezuela, Panama, Colombia", bulletCount: 7, hasKeyProjects: false },
 ];
 
 const renderBold = (text: string) => {
@@ -67,7 +67,7 @@ const FullExperience = () => {
               <div className="absolute left-2.5 md:left-[-4px] top-1 w-2.5 h-2.5 rounded-full bg-gold border-2 border-background" />
               <p className="text-xs uppercase tracking-widest text-gold font-medium mb-1">{t(`fexp.${i}.period`)}</p>
               <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-1">{t(`fexp.${i}.title`)}</h3>
-              <p className="text-sm text-muted-foreground mb-4">{exp.company} · {exp.location}</p>
+              <p className="text-sm text-muted-foreground mb-4">{t(exp.companyKey)} · {exp.location}</p>
               <ul className="space-y-2.5">
                 {Array.from({ length: exp.bulletCount }, (_, j) => (
                   <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
