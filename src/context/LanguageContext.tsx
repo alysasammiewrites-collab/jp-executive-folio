@@ -78,9 +78,9 @@ const translations: Record<string, Record<Lang, string>> = {
 
   "exp.1.period": { EN: "Jul 2021 – Sep 2023", ES: "Julio 2021 – Septiembre 2023" },
   "exp.1.title": { EN: "Senior Contract Administrator", ES: "Administrador Senior de Contratos" },
-  "exp.1.highlight": { EN: "$100M Solar Plant", ES: "Planta Solar de $100M" },
-  "exp.1.b0": { EN: "Managed contracts for $100M renewable energy project (105MW solar plant)", ES: "Gestioné contratos para un proyecto de energía renovable de $100M (planta solar de 105MW)" },
-  "exp.1.b1": { EN: "Secured $24M in performance and advance payment bonds", ES: "Obtuve y ejecuté $24M en fianzas de cumplimiento y anticipos" },
+  "exp.1.highlight": { EN: "Secured & Executed $24M in Bonds", ES: "Obtuve y ejecuté USD $24 millones en fianzas" },
+  "exp.1.b0": { EN: "Managed contracts for $100M renewable energy project (105MW solar plant)", ES: "Gestioné contratos para un proyecto de energía renovable de USD $100 millones (planta solar de 105MW)" },
+  "exp.1.b1": { EN: "Secured & executed $24M in performance and advance payment bonds", ES: "Obtuve y ejecuté USD $24 millones en fianzas de cumplimiento y anticipos" },
   "exp.1.b2": { EN: "Managed 29+ contractual claims and breach cases", ES: "Gestioné más de 29 reclamaciones contractuales y casos de incumplimiento" },
   "exp.1.b3": { EN: "Controlled delay damages and negotiated extension of time (EOT) claims", ES: "Controlé los daños por demora y negocié extensiones de plazo (EOT)" },
 
