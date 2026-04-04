@@ -123,7 +123,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "edu.viewDetails": { EN: "View Details", ES: "Ver detalles" },
   "edu.hideDetails": { EN: "Hide Details", ES: "Ocultar detalles" },
   "edu.postgrad": { EN: "Postgraduate & Executive Education", ES: "Estudios de Posgrado y Ejecutivos" },
-  "edu.magister": { EN: "Magister – Advanced Management Program (PAG)", ES: "Maestría – Programa Avanzado de Gestión (PAG)" },
+  "edu.magister": { EN: "Magister – Advanced Management Program (PAG)", ES: "Magíster – Programa Avanzado de Gestión (PAG)" },
   "edu.iesaLocation": { EN: "Instituto de Estudios Superiores de Administración (IESA) – Venezuela", ES: "Instituto de Estudios Superiores de Administración (IESA) – Venezuela" },
   "edu.undergrad": { EN: "Undergraduate Studies", ES: "Estudios de Pregrado" },
   "edu.polsci": { EN: "Political Science / Minor in International Studies", ES: "Ciencias Políticas / Mención en Estudios Internacionales" },
