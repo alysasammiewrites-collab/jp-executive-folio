@@ -185,7 +185,7 @@ const translations: Record<string, Record<Lang, string>> = {
   // Full experience items
   "fexp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
   "fexp.0.period": { EN: "Nov 2023 – Present", ES: "Noviembre de 2023 – Presente" },
-  "fexp.0.b0": { EN: "Leading contract management for a **$250M** data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de **$250 millones** (infraestructura de 40 MW)" },
+  "fexp.0.b0": { EN: "Leading contract management for a **$250M** data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD **$250 millones** (infraestructura de 40 MW)" },
   "fexp.0.b1": { EN: "Drafting, negotiating, and administering EPCM and supplier contracts", ES: "Redacté, negocié y administré de contratos PMG & EPCM con proveedores" },
   "fexp.0.b2": { EN: "Driving risk identification and mitigation strategies across the full project lifecycle", ES: "Impulsé estrategias de identificación y mitigación de riesgos a lo largo de todo el ciclo de vida del proyecto" },
   "fexp.0.b3": { EN: "Overseeing budgeting, cost control, and contract documentation", ES: "Supervisé del presupuesto, el control de costos y la documentación contractual" },
