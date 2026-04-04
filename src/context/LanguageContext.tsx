@@ -102,8 +102,8 @@ const translations: Record<string, Record<Lang, string>> = {
   "exp.4.period": { EN: "Jan 2010 – Jan 2017", ES: "Enero de 2010 – Enero de 2017" },
   "exp.4.title": { EN: "Managing Director / Contract & Project Consultant", ES: "Director General / Consultor de Contratos y Proyectos" },
   "exp.4.highlight": { EN: "$125M Project Delivered", ES: "Proyecto de USD $125 millones entregado" },
-  "exp.4.b0": { EN: "Led contract strategy, procurement, and project controls across multiple projects", ES: "Lideré la estrategia de contratos, adquisiciones y control de proyectos en múltiples proyectos" },
-  "exp.4.b1": { EN: "Delivered $125M biomass power project feasibility and contract structuring", ES: "Realicé el estudio de viabilidad y la estructuración contractual de un proyecto de energía de biomasa de $125 millones" },
+  "exp.4.b0": { EN: "Led contract strategy, procurement, and project controls across multiple projects", ES: "Lideré la estrategia de contratos, compras y control de proyectos en múltiples proyectos" },
+  "exp.4.b1": { EN: "Delivered $125M biomass power project feasibility and contract structuring", ES: "Realicé el estudio de viabilidad y la estructuración contractual de un proyecto de energía de biomasa de USD $125 millones" },
   "exp.4.b2": { EN: "Managed EPC, EPCM, BOT, and PPA contract structures", ES: "Gestioné estructuras contractuales EPC, EPCM, BOT y PPA" },
   "exp.4.b3": { EN: "Directed multidisciplinary teams across engineering and commercial functions", ES: "Dirigí equipos multidisciplinarios en las áreas de ingeniería y aspectos comerciales" },
 
