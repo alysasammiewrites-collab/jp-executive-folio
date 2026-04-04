@@ -28,7 +28,7 @@ const translations: Record<string, Record<Lang, string>> = {
 
   // Hero
   "hero.title": { EN: "Senior Contract Management & Commercial Leader", ES: "Líder Sénior en Gestión de Contratos y Asuntos Comerciales" },
-  "hero.stats": { EN: "35+ Years Experience  ·  EPCM, EPC, Energy & Infrastructure  ·  Contracts up to $3B+", ES: "Más de 35 Años de Experiencia  ·  EPCM, EPC, Energía e Infraestructura  ·  Contratos de hasta más de 3 Billones de Dólares" },
+  "hero.stats": { EN: "35+ Years Experience  ·  EPCM, EPC, Energy & Infrastructure  ·  Contracts up to $3B+", ES: "Más de 35 Años de Experiencia  ·  EPCM, EPC, Energía e Infraestructura  ·  Contratos de hasta más de USD $3 Billones" },
   "hero.subtitle": { EN: "Delivering commercial strategy, contract leadership, and risk-managed outcomes across global projects.", ES: "Entregando estrategias comerciales, liderazgo contractual y resultados con gestión de riesgos en proyectos globales." },
   "hero.viewExperience": { EN: "View Experience", ES: "Ver Experiencia" },
   "hero.downloadCV": { EN: "Download CV", ES: "Bajar CV" },
