@@ -57,7 +57,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "expertise.5": { EN: "Change Order Management", ES: "Gestión de Órdenes de Cambio" },
   "expertise.6": { EN: "Risk Management", ES: "Gestión de Riesgos" },
   "expertise.7": { EN: "Cost Control & Budgeting", ES: "Control de Costos y Presupuestos" },
-  "expertise.8": { EN: "Procurement & Supplier Management", ES: "Adquisiciones y Gestión de Proveedores" },
+  "expertise.8": { EN: "Procurement & Supplier Management", ES: "Compras y Gestión de Proveedores" },
   "expertise.9": { EN: "Project Controls (EVM, KPI, WBS, CBS)", ES: "Control de Proyectos (EVM, KPI, WBS, CBS)" },
   "expertise.10": { EN: "Tendering (RFQ, RFP, ITB)", ES: "Licitaciones (RFQ, RFP, ITB)" },
   "expertise.11": { EN: "Stakeholder Management", ES: "Gestión de Partes Interesadas" },
