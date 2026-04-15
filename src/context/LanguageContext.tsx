@@ -72,7 +72,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "exp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
   "exp.0.highlight": { EN: "$250M+ Data Center Project", ES: "Proyecto de Centro de Datos de más de USD $250 millones" },
   "exp.0.b0": { EN: "Lead contract management for $250M+ data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD $250 millones (infraestructura de 40 MW)" },
-  "exp.0.b1": { EN: "Draft, negotiate, and administer MPG, EPCM, and supplier contracts", ES: "Redacté, negocié y administré contratos MPG, EPCM y con proveedores" },
+  "exp.0.b1": { EN: "Draft, negotiate, and administer MPG, EPCM, and supplier contracts", ES: "Redacté, negocié y administré contratos PMG, EPCM y con proveedores" },
   "exp.0.b2": { EN: "Identify and mitigate commercial and contractual risks across project lifecycle", ES: "Identifiqué y mitigué riesgos comerciales y contractuales a lo largo del ciclo de vida del proyecto" },
   "exp.0.b3": { EN: "Monitor budgets and implement cost optimization strategies", ES: "Monitoreé presupuestos e implementé estrategias de optimización de costos" },
 
@@ -186,7 +186,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "fexp.0.title": { EN: "Contract Team Lead", ES: "Jefe de Equipo de Contratos" },
   "fexp.0.period": { EN: "Nov 2023 – Present", ES: "Noviembre de 2023 – Presente" },
   "fexp.0.b0": { EN: "Leading contract management for a **$250M** data center project (40MW infrastructure)", ES: "Lideré la gestión de contratos para un proyecto de centro de datos de USD **$250 millones** (infraestructura de 40 MW)" },
-  "fexp.0.b1": { EN: "Drafting, negotiating, and administering MPG, EPCM, and supplier contracts", ES: "Redacté, negocié y administré contratos MPG, EPCM y con proveedores" },
+  "fexp.0.b1": { EN: "Drafting, negotiating, and administering MPG, EPCM, and supplier contracts", ES: "Redacté, negocié y administré contratos PMG, EPCM y con proveedores" },
   "fexp.0.b2": { EN: "Driving risk identification and mitigation strategies across the full project lifecycle", ES: "Impulsé estrategias de identificación y mitigación de riesgos a lo largo de todo el ciclo de vida del proyecto" },
   "fexp.0.b3": { EN: "Overseeing budgeting, cost control, and contract documentation", ES: "Supervisé del presupuesto, el control de costos y la documentación contractual" },
   "fexp.0.b4": { EN: "Acting as key interface between stakeholders, contractors, and senior leadership", ES: "Enlace clave entre las partes interesadas, los contratistas y la alta gerencia" },
